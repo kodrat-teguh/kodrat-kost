@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kost Kodrat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navigasi -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-home"></i> Kost Kodrat
+            </div>
+            <nav>
+                <a href="#home">Beranda</a>
+                <a href="#rooms">Kamar</a>
+                <a href="#facilities">Fasilitas</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section (Banner Utama) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Kost Nyaman, Harga Bersahabat</h1>
+            <p>Dimulai dari Rp 1.500.000/bulan. Dekat Kampus & Pusat Kota.</p>
+            <div class="hero-buttons">
+                <a href="#rooms" class="btn-primary">Lihat Kamar</a>
+                <a href="https://wa.me/6281223569467" class="btn-secondary">
+                    <i class="fab fa-whatsapp"></i> Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-bed"></i>
+                    <h3>15+</h3>
+                    <p>Kamar Tersedia</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <h3>50+</h3>
+                    <p>Penyewa</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <h3>4.8</h3>
+                    <p>Rating</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>500m</h3>
+                    <p>Dari Kampus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms-section">
+        <div class="container">
+            <h2 class="section-title">Kamar Tersedia</h2>
+            <p class="section-subtitle">Pilih kamar yang sesuai dengan kebutuhan Anda</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="mandi-dalam">Mandi Dalam</button>
+                <button class="filter-btn" data-filter="mandi-luar">Mandi Luar</button>
+            </div>
+
+            <div id="rooms-container" class="rooms-grid">
+                <!-- Data kamar akan di-load dari API -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities-section">
+        <div class="container">
+            <h2 class="section-title">Fasilitas Lengkap</h2>
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>WiFi Kencang</h3>
+                    <p>Internet 50 Mbps gratis untuk semua penyewa</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>CCTV 24 Jam</h3>
+                    <p>Keamanan terjamin dengan CCTV di setiap titik</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-parking"></i>
+                    <h3>Parkir Luas</h3>
+                    <p>Kapasitas 30 motor dan 5 mobil</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Dapur Umum</h3>
+                    <p>Area memasak dengan kompor dan kulkas</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Laundry</h3>
+                    <p>Laundry otomatis tersedia di lokasi</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-water"></i>
+                    <h3>Air 24 Jam</h3>
+                    <p>Suplai air bersih tanpa henti</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <p class="section-subtitle">Tertarik untuk tinggal? Hubungi kami sekarang!</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. Tanjung Jaya, RT/RW 023/010, Des.Patimban, Kec.Pusakanaga, Kab.Subang, Jawa Barat, 42155</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 812-2356-9467</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@kostkodrat.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Kunjungan</h4>
+                            <p>Senin - Minggu: 08.00 - 20.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                <!-- Form langsung ke WhatsApp -->
+                    <form id="contact-form" onsubmit="sendToWhatsApp(event)">
+                        <input type="text" id="name" placeholder="Nama Lengkap" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="tel" id="phone" placeholder="Nomor WhatsApp" required>
+                        <textarea id="message" placeholder="Pesan atau Pertanyaan" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary">
+                            <i class="fab fa-whatsapp"></i> Kirim ke WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-home"></i> Kost Kodrat
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Beranda</a>
+                    <a href="#rooms">Kamar</a>
+                    <a href="#facilities">Fasilitas</a>
+                    <a href="#contact">Kontak</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kost Kodrat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6281223569467" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
